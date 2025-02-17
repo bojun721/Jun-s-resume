@@ -20,12 +20,19 @@
             --card-bg: #1f2937;
             --nav-bg: #1f2937;
             --nav-text: #ffffff;
+            
+        }
+
+         /* 隱藏滾動條 */
+         ::-webkit-scrollbar {
+            display: none;
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            
         }
 
         body {
@@ -46,16 +53,16 @@
         }
 
         .nav-container {
-            max-width: 1200px;
+            max-width: 1600px;
             margin: 0 auto;
-            padding: 0.75rem 1rem;
+            padding: 2.5rem 1rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         .logo {
-            font-size: 1.25rem;
+            font-size: 1.75rem;
             font-weight: bold;
             display: flex;
             align-items: center;
@@ -81,7 +88,7 @@
             color: var(--nav-text, #000000);
             text-decoration: none;
             transition: color 0.3s;
-            font-size: 1rem;
+            font-size: 1.5rem;
         }
 
         .nav-links a:hover {
@@ -163,12 +170,19 @@
         .social-links a {
             color: var(--text-color);
             padding: 0.5rem;
-            border-radius: 50%;
+            border-radius: 8px;
             transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
         .social-links a:hover {
             background: rgba(0,0,0,0.1);
+        }
+
+        .email-link span {
+            font-size: 0.9rem;
         }
 
         .skills-section {
@@ -260,14 +274,15 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h1>你好，我是 <span class="gradient-text">開發者</span></h1>
-                <p>專注於創造有趣且實用的網頁體驗</p>
+                <h1>你好，我是 <span class="gradient-text">詹博鈞</span></h1>
+                <p>專注於創造有趣且實用的網頁體驗的初階工程師</p>
                 <div class="social-links">
                     <a href="#" title="GitHub">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                     </a>
-                    <a href="#" title="Email">
+                    <a href="mailto:c0979689101@gmail.com" title="Email" class="email-link">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <span>c0979689101@gmail.com</span>
                     </a>
                 </div>
             </div>
@@ -276,21 +291,20 @@
         <section class="skills-section">
             <div class="skills-grid">
                 <div class="skill-card">
-                    <h3>技術領域</h3>
+                    <h3>電腦應用</h3>
                     <ul class="skill-list">
                         <li>HTML5 / CSS3</li>
                         <li>JavaScript</li>
                         <li>Vue.js</li>
-                        <li>響應式設計</li>
+                        <li>figma</li>
                     </ul>
                 </div>
                 <div class="skill-card">
-                    <h3>專案經驗</h3>
+                    <h3>工作經驗</h3>
                     <ul class="skill-list">
-                        <li>網頁應用開發</li>
-                        <li>前端效能優化</li>
-                        <li>UI/UX 設計</li>
-                        <li>跨瀏覽器兼容</li>
+                        <li>在前端培訓班學到了基礎知識</li>
+                        <li>在直播助理中學到了團隊合作的重要</li>
+                        <li>在飲料店四年學到了顧客服務溝通的能力</li>
                     </ul>
                 </div>
             </div>
